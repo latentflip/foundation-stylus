@@ -15,7 +15,7 @@ This is:
 * Use stylizer
 * `npm install foundation-stylus`
 * Add `'foundation-stylus`' to list of stylizer/stylus plugins.
-* Add `@import stylus` to your `app.styl`.
+* Add `@import 'foundation'` to your main stylus file, e.g. `app.styl`.
 
 
 ## Usage
