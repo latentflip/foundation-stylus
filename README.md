@@ -96,20 +96,20 @@ Using foundation-stylus as above means that we can integrate stylus and foundati
 
 ## Grid
 
-### `grid-row()`
+* `grid-row()`
 
-Equivalent to adding foundation's `.row` class
-
-```stylus
-.myapp
-  grid-row
-```
-
-is equivalent to
-
-```html
-<div class='myapp row'></div>
-```
+    Equivalent to adding foundation's `.row` class
+    
+    ```stylus
+    .myapp
+      grid-row
+    ```
+    
+    is equivalent to
+    
+    ```html
+    <div class='myapp row'></div>
+    ```
 
 
 ### `grid-columns(small, [medium], [large])`
