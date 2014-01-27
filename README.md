@@ -114,7 +114,7 @@ is equivalent to
 
 #### `grid-columns(small, [medium], [large])`
 
-Helper for creating columns, with positional arguments. `medium` and `large` are optional.
+Helper for creating columns, with positional arguments. `medium` and `large` are optional. Aliased as `grid-column` if you prefer that.
 
 ```stylus
 .mycolumn
@@ -129,7 +129,7 @@ is equivalent to
 
 #### `grid-columns(small: n, medium: n, large: n)`
 
-Helper for creating columns, with keyword arguments. You may specify any 1, 2 or all, arguments to create the relevant columns.
+Helper for creating columns, with keyword arguments. You may specify any 1, 2 or all, arguments to create the relevant columns. Aliased as `grid-column` if you prefer that.
 
 ```stylus
 .mycolumn
