@@ -2,18 +2,19 @@
   "name": "foundation-stylus",
   "version": "0.0.1",
   "description": "Stylus plugin for foundation",
-  "main": "build.js",
+  "main": "foundation-plugin.js",
   "directories": {
-    "test": "test"
+    "lib": "./styl"
   },
   "dependencies": {
+  },
+  "devDependencies": {
     "bluebird": "~1.0.0",
     "cssbeautify": "~0.3.1"
   },
-  "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
-  "license": "BSD-2-Clause"
+  "author": "Philip Roberts",
+  "license": "MIT"
 }
