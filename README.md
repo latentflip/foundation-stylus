@@ -90,7 +90,7 @@ Using foundation-stylus as above means that we can integrate stylus and foundati
 * [Grid](#grid)
   * [`grid-row()`](#grid-row) - equivalent to .row
   * ['`grid-columns(small, [medium], [large])`'](#grid-columnssmall-medium-large) - equivalent to .small-n.medium-n.large-n.columns
-  * ['`grid-columns(small: n, medium: n, large: n])`](#grid-columnssmall-n-medium-n-large-n) - equivalent to .small-n.medium-n.large-n.columns
+  * ['`grid-columns(small: n, medium: n, large: n])`'](#grid-columnssmall-n-medium-n-large-n) - equivalent to .small-n.medium-n.large-n.columns
 
 
 
