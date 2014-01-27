@@ -141,3 +141,14 @@ is equivalent to
 ```html
 <div class='mycolumn small-2 large-4 columns'></div>
 ```
+
+
+## Contributing
+
+I would love to support more things via (minimal mixins), pull requests are more than welcome for that.
+
+
+## Versioning
+
+Versioning is tricky because I want to be able to track foundations updates (both minor and major), but also modify the actual api of this plugin if necessary, all while sticking closely to semver. My intention is to mark this as 1.0.0 when the public api for the plugin itself is stable, and then release minor/patch versions along with either mixin increments in this plugin, or minor/patch releases of foundation itself. If zurb 6 comes out, I suspect I'll bump everything here up to 2.0.0 and carry on from there.
+
