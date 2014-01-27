@@ -3,12 +3,6 @@
 //--- PRIVATE API---
 // You may use these, but you should probably use the explicitly public mixins in the PUBLIC API section.
 
-// Equivalent to .column/.columns, you should probably use one of the more specific mixins below, as they mixin column for you
-grid-column()
-  @extend .column
-grid-colums()
-  grid-column()
-
 // Equivalent to .small-<n>.columns
 grid-columns-small(n)
   @extend .columns
@@ -52,3 +46,6 @@ grid-columns(small=false, medium=false, large=false)
 
   if large
     grid-columns-large(large)
+
+grid-column(small=false, medium=false, large=false)
+  grid-columns(small, medium, large)
