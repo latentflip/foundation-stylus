@@ -1,0 +1,54 @@
+// Define mixins as detailed in http://foundation.zurb.com/docs/components/grid.html
+
+//--- PRIVATE API---
+// You may use these, but you should probably use the explicitly public mixins in the PUBLIC API section.
+
+// Equivalent to .column/.columns, you should probably use one of the more specific mixins below, as they mixin column for you
+grid-column()
+  @extend .column
+grid-colums()
+  grid-column()
+
+// Equivalent to .small-<n>.columns
+grid-columns-small(n)
+  @extend .columns
+  @extend .small-{n}
+
+//Equivalent to .medium-<n>.columns
+grid-columns-medium(n)
+  @extend .columns
+  @extend .medium-{n}
+
+//Equivalent to .large<n>.columns
+grid-columns-large(n)
+  @extend .columns
+  @extend .large-{n}
+
+
+
+//--- PUBLIC API ---
+// Equivalent to .row
+grid-row()
+  @extend .row
+
+
+// Helper for specifying size of a column, usage:
+
+// Positional args, grid-columns(small, [medium], [large])
+// * grid-columns(4, 2, 1)  === .small-4.medium-2.large-1.columns
+// * grid-columns(4, 2)     === .small-4.medium-2.columns
+// * grid-columns(4)        === .small-4.columns
+
+// Named args, grid-columns(small: n, medium: n, large: n)
+// * grid-columns(small: 4)            === .small-2.columns
+// * grid-columns(large: 4)            === .large-4.columns
+// * grid-columns(large: 4, medium: 2) === .medium-2.large-4.columns
+grid-columns(small=false, medium=false, large=false)
+  if small
+    grid-columns-small(small)
+
+  if medium
+    grid-columns-medium(medium)
+
+  if large
+    grid-columns-large(large)
