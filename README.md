@@ -96,48 +96,48 @@ Using foundation-stylus as above means that we can integrate stylus and foundati
 
 ### Grid
 
-* **`grid-row()`**
+#### `grid-row()`
 
-    Equivalent to adding foundation's `.row` class:
-    
-    ```stylus
-    .myapp
-      grid-row
-    ```
-    
-    is equivalent to
-    
-    ```html
-    <div class='myapp row'></div>
-    ```
+Equivalent to adding foundation's `.row` class:
+
+```stylus
+.myapp
+  grid-row
+```
+
+is equivalent to
+
+```html
+<div class='myapp row'></div>
+```
 
 
-* **`grid-columns(small, [medium], [large])`**
+#### `grid-columns(small, [medium], [large])`
 
-    Helper for creating columns, with positional arguments. `medium` and `large` are optional.
+Helper for creating columns, with positional arguments. `medium` and `large` are optional.
 
-    ```stylus
-    .mycolumn
-      grid-columns(2, 3, 4)
-    ```
+```stylus
+.mycolumn
+  grid-columns(2, 3, 4)
+```
 
-    is equivalent to
+is equivalent to
 
-    ```html
-    <div class='mycolumn small-2 medium-3 large-4 columns'></div>
-    ```
+```html
+<div class='mycolumn small-2 medium-3 large-4 columns'></div>
+```
 
-* **`grid-columns(small: n, medium: n, large: n)`**
+#### `grid-columns(small: n, medium: n, large: n)`
 
-    Helper for creating columns, with keyword arguments. You may specify any 1, 2 or all, arguments to create the relevant columns.
+Helper for creating columns, with keyword arguments. You may specify any 1, 2 or all, arguments to create the relevant columns.
 
-    ```stylus
-    .mycolumn
-      grid-columns(small: 4, large: 2)
-    ```
+```stylus
+.mycolumn
+  grid-columns(small: 4, large: 2)
+```
 
-    is equivalent to
+is equivalent to
 
-    ```html
-    <div class='mycolumn small-2 large-4 columns'></div>
-    ```
+```html
+<div class='mycolumn small-2 large-4 columns'></div>
+```
